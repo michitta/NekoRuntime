@@ -1,0 +1,118 @@
+/* NekoRuntime. Design by FluffyCuteOwO */
+@import "../../styles/global.css";
+@import "../../styles/variables.css";
+
+#loginCustom {
+  -fx-background-color: #232323;
+  -fx-background-radius: 6px;
+}
+
+#login,
+#password {
+  -fx-background-color: #282828;
+  -fx-background-radius: 6px;
+  -fx-font-size: 12px;
+  -fx-font-family: "Manrope SemiBold";
+  -fx-prompt-text-fill: rgba(255, 255, 255, 0.25);
+  -fx-text-fill: rgba(255, 255, 255, 0.25);
+  -fx-padding: 0 0 0 14px;
+}
+#password:focused,
+#login:focused {
+  -fx-text-fill: #ffffff;
+}
+
+#logo40 {
+  -fx-background-image: url("../../images/icons/logo40.png");
+  -fx-background-size: cover;
+}
+
+#labelLogin1 {
+  -fx-font-size: 16px;
+  -fx-font-family: "Manrope Bold";
+  -fx-text-fill: rgba(255, 255, 255, 1);
+}
+
+#labelLogin2 {
+  -fx-font-size: 12px;
+  -fx-font-family: "Manrope Bold";
+  -fx-text-fill: rgba(255, 255, 255, 0.5);
+}
+
+#buttonColor {
+  -fx-background-color: #282828;
+  -fx-background-radius: 6px;
+}
+
+#buttonColor:hover {
+  -fx-background-color: #fe9c9c;
+}
+
+#loginLabel {
+  -fx-text-fill: #ffffff;
+  -fx-font-size: 12px;
+  -fx-font-family: "Manrope SemiBold";
+}
+
+#netacc {
+  -fx-text-fill: rgba(255, 255, 255, 0.5);
+  -fx-font-size: 12px;
+  -fx-font-family: "Manrope Medium";
+}
+
+#createAccount {
+  -fx-text-fill: rgba(74, 147, 255, 0.5);
+  -fx-font-size: 12px;
+  -fx-font-family: "Manrope Medium";
+}
+
+#player {
+  -fx-background-color: #232323;
+  -fx-background-radius: 6px;
+}
+
+/*-- Приветствие игрока --*/
+#text-2fa,
+#playerName {
+  -fx-font-size: 16px;
+  -fx-font-family: "Manrope Bold";
+  -fx-text-fill: #ffffff;
+  -fx-align-items: center;
+}
+#welcome {
+  -fx-font-size: 12px;
+  -fx-font-family: "Manrope Bold";
+  -fx-text-fill: rgba(255, 255, 255, 0.5);
+  -fx-align-items: center;
+}
+
+.field-auth {
+  -fx-font-size: 16px;
+  -fx-text-fill: -fx-black2C;
+  -fx-font-family: "Manrope SemiBold";
+  -fx-cursor: text;
+  -fx-prompt-text-fill: rgba(255, 255, 255, 0.25);
+  -fx-text-fill: rgba(255, 255, 255, 0.25);
+}
+.field-auth:focused {
+  -fx-text-fill: #ffffff;
+}
+
+#1st,
+#2st,
+#3st,
+#4st,
+#5st,
+#6st {
+  -fx-background-color: #282828;
+  -fx-background-radius: 6px;
+  -fx-padding: 0;
+  -fx-hgap: 0;
+  -fx-vgap: 0;
+}
+
+#log {
+  -fx-background-image: url("../../images/components/log.gif");
+  -fx-background-size: cover;
+}
+/* NekoRuntime. Design by FluffyCuteOwO */

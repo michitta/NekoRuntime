@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<!-- DrLeonardo refactor -->
+
+<Pane fx:id="loginPane" prefHeight="412.0" prefWidth="340.0" styleClass="transparent" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <Pane id="loginCustom" fx:id="layout" prefHeight="412.0" prefWidth="340.0" styleClass="transparent">
+      <children>
+         <Pane id="logo40" layoutX="26.0" layoutY="28.0" prefHeight="40.0" prefWidth="40.0" />
+         <Label id="labelLogin1" layoutX="26.0" layoutY="90.0" text="Авторизация через 2FA" textFill="#da8181" />
+         <Label id="labelLogin2" layoutX="26.0" layoutY="116.0" text="Введите код из приложения" />
+         <Label id="netacc" layoutX="70.0" layoutY="363.0" maxWidth="-Infinity" text="Возникли проблемы?" />
+         <Label id="createAccount" layoutX="197.0" layoutY="363.0" maxWidth="-Infinity" text="Помощь тут!" />
+      
+              <!-- Блок атворизации -->
+           <Pane id="authButtonBlock" fx:id="auth" layoutX="80.0" layoutY="166.0" prefHeight="80.0" prefWidth="180.0">
+               <children>
+                   
+                         <!-- Кнопка второго фактора -->
+                   <Pane id="auth2fa" prefHeight="80.0" prefWidth="180.0">
+                       <children>
+                           <Button id="authButton" alignment="CENTER" cacheShape="false" cancelButton="true" centerShape="false" contentDisplay="CENTER" defaultButton="true" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="180.0" scaleShape="false" snapToPixel="false" styleClass="transparent">
+                               <graphic>
+                                   <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="180.0">
+                                       <children>
+                                           <TextField id="6st" alignment="CENTER" layoutX="154.0" layoutY="20.0" prefHeight="40.0" prefWidth="25.0" promptText="_" styleClass="field-auth" />
+                                           <TextField id="5st" alignment="CENTER" layoutX="124.0" layoutY="20.0" prefHeight="40.0" prefWidth="25.0" promptText="_" styleClass="field-auth" />
+                                           <TextField id="4st" alignment="CENTER" layoutX="94.0" layoutY="20.0" prefHeight="40.0" prefWidth="25.0" promptText="_" styleClass="field-auth" />
+                                           <TextField id="3st" alignment="CENTER" layoutX="60.0" layoutY="20.0" prefHeight="40.0" prefWidth="25.0" promptText="_" styleClass="field-auth" />
+                                           <TextField id="2st" alignment="CENTER" layoutX="30.0" layoutY="20.0" prefHeight="40.0" prefWidth="25.0" promptText="_" styleClass="field-auth" />
+                                           <TextField id="1st" alignment="CENTER" layoutY="20.0" prefHeight="40.0" prefWidth="25.0" promptText="_" styleClass="field-auth" />
+                                       </children>
+                                   </Pane>
+                               </graphic>
+                           </Button>
+                       </children>
+                   </Pane>
+               </children>
+           </Pane>
+      </children>
+   </Pane>
+
+    <!-- Подключение стилей-->
+    <stylesheets>
+        <URL value="@login.css" />
+        <URL value="@../../styles/global.css" />
+        <URL value="@../../styles/variables.css" />
+    </stylesheets>
+
+</Pane>

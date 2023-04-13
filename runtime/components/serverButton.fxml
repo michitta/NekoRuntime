@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.SVGPath?>
+
+<!-- DrLeonardo refactor -->
+
+<Pane fx:id="serverButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="162.0" prefWidth="204.0" styleClass="b-20" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <Pane id="serverButtonLayout" layoutX="2.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="158.0" prefWidth="200.0">
+      <children>
+         <Pane id="mainContent" prefHeight="104.0" prefWidth="200.0" />
+         <Pane id="bottom" layoutY="104.0" prefHeight="54.0" prefWidth="200.0">
+            <children>
+               <Pane id="someSmallImage" layoutX="14.0" layoutY="16.0" prefHeight="22.0" prefWidth="22.0" />
+               <Label id="nameServer" layoutX="50.0" layoutY="11.0" text="Sword Art Online" />
+               <Label id="online" layoutX="50.0" layoutY="27.0" prefHeight="12.0" prefWidth="142.0" text="Версия: 1.18.1 • Онлайн: 10 из 1000" />
+            </children>
+         </Pane>
+      </children>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Pane>
+   <Pane id="goServerHover" layoutX="2.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.0" prefHeight="158.0" prefWidth="200.0">
+      <children>
+         <Label id="goServer" layoutX="52.0" layoutY="71.0" text="Перейти к серверу" />
+         <SVGPath content="M9.25 5.56699C9.58333 5.75944 9.58333 6.24056 9.25 6.43301L1.75 10.7631C1.41667 10.9556 1 10.715 1 10.3301L1 1.66987C1 1.28497 1.41667 1.04441 1.75 1.23686L9.25 5.56699Z" fill="TRANSPARENT" layoutX="35.0" layoutY="73.0" stroke="WHITE" />
+      </children>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Pane>
+
+   <!-- Подключение стилей-->
+   <stylesheets>
+      <URL value="@components.css" />
+      <URL value="@../styles/global.css" />
+      <URL value="@../styles/variables.css" />
+   </stylesheets>
+
+</Pane>

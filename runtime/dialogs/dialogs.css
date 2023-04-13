@@ -1,0 +1,48 @@
+/* NekoRuntime. Design by FluffyCuteOwO */
+
+@import "../styles/global.css";
+@import "../styles/variables.css";
+
+/*-- Блок диалога --*/
+.dialog {
+  -fx-background-color: #232323;
+  -fx-background-radius: 6px;
+}
+
+/*-- Кнопки диалога --*/
+#applyPane {
+  -fx-background-color: #fe9c9c;
+  -fx-background-radius: 6px;
+}
+.apply-button-text {
+  -fx-font-size: 10px;
+  -fx-font-family: "Manrope SemiBold";
+  -fx-fill: #ffffff;
+}
+
+/*-- Текст диалога --*/
+.dialogText {
+  -fx-font-size: 12px;
+  -fx-text-fill: rgba(255, 255, 255, 0.5);
+  -fx-font-family: "Manrope Bold";
+}
+
+/*-- Ввод данных --*/
+#dialogInput {
+  -fx-background-color: -fx-whiteG;
+  -fx-background-radius: 0 0 20 20;
+  -fx-font-size: 14px;
+  -fx-padding: 0 0 0 10px;
+  -fx-text-fill: -fx-header;
+  -fx-font-weight: bold;
+  -fx-cursor: text;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.1, 0, 0);
+}
+#dialogInput:focused {
+  -fx-text-fill: -fx-black2C;
+}
+.InputError {
+  -fx-background-radius: 0;
+  -fx-background-color: -fx-whiteG;
+  -fx-text-fill: -fx-red;
+}

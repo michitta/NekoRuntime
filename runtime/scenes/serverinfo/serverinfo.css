@@ -1,0 +1,54 @@
+/* NekoRuntime. Design by FluffyCuteOwO */
+
+@import "../../styles/global.css";
+@import "../../styles/variables.css";
+
+#serverName {
+  -fx-font-size: 14px;
+  -fx-font-family: "Manrope ExtraBold";
+  -fx-text-fill: #ffffff;
+}
+#serverDescription {
+  -fx-font-size: 14px;
+  -fx-text-fill: -fx-black2C;
+}
+
+#linear {
+  -fx-background-image: url("../../images/components/linear.png");
+}
+
+#playingNow {
+  -fx-font-family: "Manrope SemiBold";
+  -fx-text-fill: rgba(255, 255, 255, 0.5);
+  -fx-font-size: 10px;
+}
+
+#online {
+  -fx-font-family: "Manrope SemiBold";
+  -fx-text-fill: rgba(255, 255, 255, 0.25);
+  -fx-font-size: 10px;
+}
+
+#aboutServer {
+  -fx-font-family: "Manrope Bold";
+  -fx-text-fill: rgba(255, 255, 255, 0.5);
+  -fx-font-size: 12px;
+}
+
+#serverDescription {
+  -fx-font-family: "Manrope SemiBold";
+  -fx-text-fill: rgba(255, 255, 255, 0.75);
+  -fx-font-size: 12px;
+}
+
+#green {
+  -fx-background-color: #62c766;
+  -fx-background-radius: 10px;
+}
+
+#greenSecond {
+  -fx-background-color: #5af385;
+  -fx-background-radius: 10px;
+}
+
+/* NekoRuntime. Design by FluffyCuteOwO */

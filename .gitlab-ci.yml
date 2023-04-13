@@ -1,0 +1,65 @@
+# This file is a template, and might need editing before it works on your project.
+# This is the Gradle build system for JVM applications
+# https://gradle.org/
+# https://github.com/gradle/gradle
+image: gradle:jdk11
+
+# Disable the Gradle daemon for Continuous Integration servers as correctness
+# is usually a priority over speed in CI environments. Using a fresh
+# runtime for each build is more reliable since the runtime is completely
+# isolated from any previous builds.
+variables:
+  GRADLE_OPTS: "-Dorg.gradle.daemon=false"
+
+before_script:
+  - export GRADLE_USER_HOME=`pwd`/.gradle
+  - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+  - eval $(ssh-agent -s)
+  - echo "$SSH_PRIVATE_KEY" | base64 -d | ssh-add - > /dev/null
+  - mkdir -p ~/.ssh
+  - chmod 700 ~/.ssh
+  - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+build:
+  stage: build
+  script: gradle -Dorg.gradle.daemon=false --build-cache assemble
+  after_script:
+    - apt-get -y update
+    - apt-get -y install zip
+    - mkdir -p artifacts
+    - cd runtime
+    - zip -r -9 ../artifacts/runtime.zip *
+    - cd ../build/libs
+    - cp *.jar ../../artifacts
+  cache:
+    key: "$CI_COMMIT_REF_NAME"
+    policy: push
+    paths:
+      - build
+      - .gradle
+  artifacts:
+    expire_in: 6 week
+    paths:
+      - artifacts
+
+test:
+  stage: test
+  script: gradle check
+  cache:
+    key: "$CI_COMMIT_REF_NAME"
+    policy: pull
+    paths:
+      - build
+      - .gradle
+
+deploy-demo:
+  stage: deploy
+  only: [master]
+  script:
+    - gradle build
+    - eval $(ssh $SSH_USER@$SSH_HOST 'cd $SSH_DIR && cat deploy-runtime.sh')
+  cache:
+    key: "$CI_COMMIT_REF_NAME"
+    policy: pull
+    paths:
+      - build
+      - .gradle

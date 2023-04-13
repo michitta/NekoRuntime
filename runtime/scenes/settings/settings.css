@@ -1,0 +1,86 @@
+/* NekoRuntime. Design by FluffyCuteOwO */
+
+@import "../../styles/global.css";
+@import "../../styles/variables.css";
+
+#settingsPane {
+  -fx-background-color: #232323;
+}
+
+.settings-container {
+  -fx-background-color: #2e2e2e;
+  -fx-background-radius: 6px;
+}
+.settings-container:hover {
+  -fx-opacity: 1;
+  -fx-background-color: #2d2d2d;
+}
+.settings-checkbox:selected {
+  -fx-border-color: #fe9c9c;
+  -fx-border-radius: 6px;
+}
+
+.maintext {
+  -fx-text-fill: #ffffff;
+  -fx-font-size: 12px;
+  -fx-font-family: "Manrope Bold";
+  -fx-label-padding: 22 0 0 30;
+  -fx-alignment: center-left;
+}
+.descriptiontext {
+  -fx-text-fill: rgba(255, 255, 255, 0.5);
+  -fx-font-size: 10px;
+  -fx-font-family: "Manrope SemiBold";
+  -fx-label-padding: 38 0 0 30;
+  -fx-alignment: center-left;
+}
+
+#buttonAdditional {
+  -fx-background-color: #2e2e2e;
+  -fx-background-radius: 6px;
+}
+
+#buttonAdditional:hover {
+  -fx-opacity: 1;
+  -fx-background-color: #2d2d2d;
+}
+
+#buttonAdditionalTitle {
+  -fx-font-family: "Manrope Bold";
+  -fx-font-size: 12px;
+  -fx-text-fill: #ffffff;
+}
+
+#buttonAdditionalDescription {
+  -fx-font-family: "Manrope SemiBold";
+  -fx-font-size: 10px;
+  -fx-text-fill: rgba(255, 255, 255, 0.5);
+}
+
+#magicwand {
+  -fx-background-image: url("../../images/components/magicwand.png");
+  -fx-background-size: contain;
+}
+
+#package {
+  -fx-background-image: url("../../images/components/package.png");
+  -fx-background-size: contain;
+}
+
+/* RAM настройки */
+#ramLabel {
+  -fx-font-family: "Manrope SemiBold";
+  -fx-font-size: 10px;
+  -fx-text-fill: rgba(255, 255, 255, 0.5);
+}
+
+#ramSlider > .track {
+  -fx-background-color: #232323;
+  -fx-pref-height: 12px;
+  -fx-background-radius: 8px;
+}
+#ramSlider > .thumb {
+  -fx-background-color: #2d2d2d;
+  -fx-pref-width: 12px;
+  -fx-pref-height: 12px;
+}

@@ -1,0 +1,37 @@
+/* NekoRuntime. Design by FluffyCuteOwO */
+
+@import "../../styles/global.css";
+@import "../../styles/variables.css";
+
+#optionsPane {
+  -fx-background-color: #232323;
+}
+
+.optional-container {
+  -fx-background-color: #2e2e2e;
+  -fx-background-radius: 6px;
+}
+.optional-container:hover {
+  -fx-opacity: 1;
+  -fx-background-color: #2d2d2d;
+}
+.optional-checkbox:selected {
+  -fx-border-color: #fe9c9c;
+  -fx-border-radius: 6px;
+}
+.maintext {
+  -fx-text-fill: #ffffff;
+  -fx-font-size: 12px;
+  -fx-font-family: "Manrope Bold";
+  -fx-label-padding: 22 0 0 30;
+  -fx-alignment: center-left;
+}
+.descriptiontext {
+  -fx-text-fill: rgba(255, 255, 255, 0.5);
+  -fx-font-size: 10px;
+  -fx-font-family: "Manrope SemiBold";
+  -fx-label-padding: 38 0 0 30;
+  -fx-alignment: center-left;
+}
+
+/* NekoRuntime. Design by FluffyCuteOwO */

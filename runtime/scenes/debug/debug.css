@@ -1,0 +1,25 @@
+/* NekoRuntime. Design by FluffyCuteOwO */
+
+@import "../../styles/global.css";
+@import "../../styles/variables.css";
+
+#debugPane {
+  -fx-background-color: #232323;
+}
+
+/* Вывод лога */
+#output-detail > #output {
+  -fx-background-color: transparent;
+  -fx-background-radius: 0;
+  -fx-padding: 0px;
+  -fx-font-family: "Manrope SemiBold";
+  -fx-text-fill: rgba(255, 255, 255, 0.75);
+  -fx-font-size: 12px;
+}
+#output-detail > #output .content,
+#output-detail > #output .content {
+  -fx-background-color: transparent;
+  -fx-background-radius: 0;
+}
+
+/* NekoRuntime. Design by FluffyCuteOwO */

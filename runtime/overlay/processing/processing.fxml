@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.SVGPath?>
+
+<!-- DrLeonardo refactor -->
+
+<Pane fx:id="overlay" prefHeight="100.0" prefWidth="100.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+
+    <!-- Подключение стилей-->
+    <stylesheets>
+        <URL value="@processing.css" />
+        <URL value="@../../styles/global.css" />
+        <URL value="@../../styles/variables.css" />
+    </stylesheets>
+   <children>
+      <SVGPath id="loading" content="M7 13C10.3137 13 13 10.3137 13 7C13 3.68629 10.3137 1 7 1C3.68629 1 1 3.68629 1 7" fill="#ffffff00" layoutX="43.0" layoutY="43.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" />
+   </children>
+
+</Pane>

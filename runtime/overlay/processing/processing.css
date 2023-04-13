@@ -1,0 +1,11 @@
+/* NekoRuntime. Design by FluffyCuteOwO */
+
+@import "../../styles/global.css";
+@import "../../styles/variables.css";
+
+#overlay {
+  -fx-background-color: #232323;
+  -fx-background-radius: 6px;
+}
+
+/* NekoRuntime. Design by FluffyCuteOwO */

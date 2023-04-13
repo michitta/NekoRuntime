@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.SVGPath?>
+
+<!-- DrLeonardo refactor -->
+
+<Pane fx:id="serverPane" prefHeight="600.0" prefWidth="904.0" styleClass="transparent" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+    <Pane fx:id="layout" prefHeight="600.0" prefWidth="904.0" styleClass="transparent">
+      <Pane id="header" prefHeight="48.0" prefWidth="904.0">
+         <children>
+            <Pane id="brandLogo" layoutX="16.0" layoutY="17.0" prefHeight="14.0" prefWidth="14.0" />
+            <Button id="exit" graphicTextGap="0.0" layoutX="856.0" maxHeight="48.0" maxWidth="48.0" minHeight="48.0" minWidth="48.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="48.0" styleClass="transparent">
+               <tooltip>
+                  <Tooltip id="exitTooltip" text="%runtime.scenes.login.exitTooltip" />
+               </tooltip>
+               <graphic>
+                  <Pane id="exitColor" maxHeight="48.0" maxWidth="48.0" minHeight="48.0" minWidth="48.0" opacity="0.25" prefHeight="48.0" prefWidth="48.0">
+                     <children>
+                        <SVGPath id="closeSVG" content="M0.186403 1.06359L8.93637 9.81363C9.04606 9.93419 9.19956 10 9.375 10C9.71494 10 10 9.71494 10 9.375C10 9.19956 9.93419 9.04606 9.81363 8.93637L1.06359 0.186402C0.95395 0.0657894 0.800438 0 0.625 0C0.285088 0 0 0.285087 0 0.624999C0 0.800438 0.0657894 0.95395 0.186403 1.06359ZM8.93637 0.186402L0.186403 8.93637C0.0657894 9.04606 0 9.19956 0 9.375C0 9.71494 0.285088 10 0.625 10C0.800438 10 0.95395 9.93419 1.06359 9.81363L9.81363 1.06359C9.93419 0.95395 10 0.800438 10 0.624999C10 0.285087 9.71494 0 9.375 0C9.19956 0 9.04606 0.0657894 8.93637 0.186402Z" fill="#f2f2f2" layoutX="19.0" layoutY="20.0" />
+                     </children>
+                  </Pane>
+               </graphic>
+            </Button>
+            <Button id="minimize" layoutX="808.0" maxHeight="48.0" maxWidth="48.0" minHeight="48.0" minWidth="48.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="48.0" styleClass="transparent">
+               <tooltip>
+                  <Tooltip id="minimizeTooltip" text="%runtime.scenes.login.minimizeTooltip" />
+               </tooltip>
+               <graphic>
+                  <Pane id="minimizeColor" maxHeight="48.0" maxWidth="48.0" minHeight="48.0" minWidth="48.0" opacity="0.25" prefHeight="48.0" prefWidth="48.0">
+                     <children>
+                        <SVGPath id="minimizeSVG" content="M0.555556 1H5H9.44444C9.74661 1 10 0.77193 10 0.5C10 0.22807 9.74661 0 9.44444 0H5H0.555556C0.253411 0 0 0.22807 0 0.5C0 0.77193 0.253411 1 0.555556 1Z" fill="#f2f2f2" layoutX="19.0" layoutY="29.0" />
+                     </children>
+                  </Pane>
+               </graphic>
+            </Button>
+            <Label id="brandLabel" layoutX="413.0" layoutY="16.0" text="Neko Launcher" />
+         </children>
+      </Pane>
+      <Pane id="leftPane" layoutY="48.0" prefHeight="552.0" prefWidth="196.0">
+         <children>
+      
+                 <!-- Аватар игрока -->
+               <ImageView id="avatar" fitHeight="28.0" fitWidth="28.0" layoutX="154.0" layoutY="16.0" smooth="false">
+                   <Image url="@../../images/icons/default.png" />
+               </ImageView>
+            <Label id="nickname" layoutX="14.0" layoutY="34.0" prefHeight="20.0" prefWidth="141.0" text="FluffyCuteOwO" />
+            <Label id="hello" layoutX="14.0" layoutY="16.0" text="Здравствуйте," />
+            <Line endX="168.0" layoutX="14.0" layoutY="58.0" stroke="#2d2d2d" strokeLineCap="ROUND" />
+            <Label id="descPoint" layoutX="14.0" layoutY="78.0" text="Информация о проекте" />
+            <Label id="descPoint" layoutX="14.0" layoutY="148.0" text="Персональная информация" />
+            <Button id="deauth" layoutX="14.0" layoutY="206.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="168.0" styleClass="transparent">
+               <graphic>
+                  <Pane id="deauth" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="30.0" prefWidth="168.0" styleClass="buttonPane">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="168.0" styleClass="buttonText" text="Выйти из аккаунта" />
+                     </children>
+                  </Pane>
+               </graphic>
+            </Button>
+            <Button id="discord" layoutX="14.0" layoutY="98.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="58.0" styleClass="transparent">
+               <graphic>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="30.0" prefWidth="58.0" styleClass="buttonPane">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="58.0" styleClass="buttonText" text="Discord" />
+                     </children>
+                  </Pane>
+               </graphic>
+            </Button>
+            <Button id="site" layoutX="80.0" layoutY="98.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" styleClass="transparent">
+               <graphic>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="30.0" prefWidth="50.0" styleClass="buttonPane">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="50.0" styleClass="buttonText" text="Сайт" />
+                     </children>
+                  </Pane>
+               </graphic>
+            </Button>
+            <Button id="vk" layoutX="138.0" layoutY="98.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="44.0" styleClass="transparent">
+               <graphic>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="30.0" prefWidth="44.0" styleClass="buttonPane">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="44.0" styleClass="buttonText" text="VK" />
+                     </children>
+                  </Pane>
+               </graphic>
+            </Button>
+            <Button id="cabinet" layoutX="14.0" layoutY="168.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="168.0" styleClass="transparent">
+               <graphic>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="30.0" prefWidth="168.0" styleClass="buttonPane">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="168.0" styleClass="buttonText" text="Личный кабинет" />
+                     </children>
+                  </Pane>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <Pane id="content" layoutX="196.0" layoutY="48.0" prefHeight="552.0" prefWidth="708.0" styleClass="px8">
+         <children>
+      
+                    <!-- Блок списка серверов -->
+               <ScrollPane id="servers" fx:id="serverlist" hbarPolicy="NEVER" layoutX="29.0" layoutY="34.0" prefHeight="518.0" prefWidth="650.0" vbarPolicy="NEVER" vmax="0.0">
+               <content>
+                  <FlowPane prefHeight="516.0" prefWidth="648.0" />
+               </content>
+               </ScrollPane>
+         </children>
+      </Pane>
+    </Pane>
+
+    <!-- Подключение стилей-->
+    <stylesheets>
+        <URL value="@servermenu.css" />
+        <URL value="@../../styles/global.css" />
+        <URL value="@../../styles/variables.css" />
+    </stylesheets>
+
+</Pane>

@@ -1,0 +1,59 @@
+/* NekoRuntime. Design by FluffyCuteOwO  */
+
+@import "../styles/global.css";
+@import "../styles/variables.css";
+
+#bottom {
+  -fx-background-color: #282828;
+  -fx-background-radius: 0 0 6px 6px;
+}
+#nameServer {
+  -fx-text-fill: #ffffff;
+  -fx-font-family: "Manrope SemiBold";
+  -fx-font-size: 12px;
+}
+
+#online {
+  -fx-text-fill: rgba(255, 255, 255, 0.5);
+  -fx-font-family: "Manrope Medium";
+  -fx-font-size: 8px;
+}
+
+#serverButtonLayout {
+  -fx-background-color: #232323;
+  -fx-background-radius: 6px;
+  -fx-background-size: cover;
+}
+
+#goServerHover:hover {
+  -fx-opacity: 1;
+  -fx-border-color: #2d2d2d;
+  -fx-border-radius: 6px;
+}
+
+#goServer {
+  -fx-text-fill: #ffffff;
+  -fx-font-family: "Manrope SemiBold";
+  -fx-font-size: 12px;
+}
+
+#notificationPane {
+  -fx-background-color: #1e1e1e;
+  -fx-background-radius: 6px;
+}
+
+#notificationHeading {
+  -fx-fill: #ffffff;
+  -fx-font-family: "Manrope ExtraBold";
+  -fx-font-size: 14px;
+}
+
+#someSmallImage {
+  -fx-background-size: cover;
+}
+
+#notificationText {
+  -fx-fill: rgba(255, 255, 255, 0.5);
+  -fx-font-family: "Manrope Bold";
+  -fx-font-size: 12px;
+}
